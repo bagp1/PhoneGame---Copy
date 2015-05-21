@@ -20,6 +20,8 @@ void parseDatagram(char[]);
 float getFloat(char[], int);
 float receive();
 
+DEFINE_LOG_CATEGORY(YourLog);
+
 union Datum{
 	char b[4];
 	float f;
@@ -93,7 +95,7 @@ FVector APhoneCharacter::getGyroVector(){
 
 void parseDatagram(char buffer[]){
 	GEngine->AddOnScreenDebugMessage(3, 5.f, FColor::Blue, TEXT("Parsing Datagram"));
-	UE_LOG(LogTemp, Log, TEXT("Parsing Datagram"));
+	UE_LOG(YourLog, Log, TEXT("Parsing Datagram"));
 
 	//bytes 0,1 encode raw and orientation, except it seems raw is byte 1 bit 0 and orientation byte 1 bit 1
 	//Raw = 0x01, Orientation = 0x02
@@ -144,7 +146,7 @@ void parseDatagram(char buffer[]){
 float receive(){
 
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Threado Starto"));
-	UE_LOG(LogTemp, Log, TEXT("Threado Starto"));
+	UE_LOG(YourLog, Log, TEXT("Threado Starto"));
 	//while (true){
 	//	if (killThread) return 0;
 	//killThread = true;
@@ -165,7 +167,7 @@ float receive(){
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Could not open Windows connection"));
 		fprintf(stderr, "Could not open Windows connection.\n");
-		UE_LOG(LogTemp, Log, TEXT("Could not open Windows connection.\n"));
+		UE_LOG(YourLog, Fatal, TEXT("Could not open Windows connection.\n"));
 		return 1;
 	}
 
@@ -175,7 +177,7 @@ float receive(){
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Could not create socket"));
 		fprintf(stderr, "Could not create socket.\n");
-		UE_LOG(LogTemp, Log, TEXT("Could not create socket.\n"));
+		UE_LOG(YourLog, Fatal, TEXT("Could not create socket.\n"));
 		WSACleanup();
 		return 2;
 	}
@@ -200,40 +202,46 @@ float receive(){
 	/* Check for NULL pointer */
 	if (hp != NULL)
 	{
-		/* Assign the address */
-		server.sin_addr.S_un.S_un_b.s_b1 = hp->h_addr_list[0][0];
-		server.sin_addr.S_un.S_un_b.s_b2 = hp->h_addr_list[0][1];
-		server.sin_addr.S_un.S_un_b.s_b3 = hp->h_addr_list[0][2];
-		server.sin_addr.S_un.S_un_b.s_b4 = hp->h_addr_list[0][3];
+		/* Assign the address */ 
+		unsigned int a, b, c, d;
+		server.sin_addr.S_un.S_un_b.s_b1 = a = hp->h_addr_list[0][0];
+		server.sin_addr.S_un.S_un_b.s_b2 = b = hp->h_addr_list[0][1];
+		server.sin_addr.S_un.S_un_b.s_b3 = c = hp->h_addr_list[0][2];
+		server.sin_addr.S_un.S_un_b.s_b4 = d = hp->h_addr_list[0][3];
 
 		FString Fs = FString(ANSI_TO_TCHAR(host_name));
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, Fs);
 		std::cout << "Hostname: " << host_name << " " << ((int)hp->h_addr_list[0][0] & 0x256) << "." << (unsigned int)hp->h_addr_list[0][1] << "." << (unsigned int)hp->h_addr_list[0][2] << "." << (unsigned int)hp->h_addr_list[0][3] << std::endl;
+		UE_LOG(YourLog, Warning, TEXT("found address: %d.%d.%d.%d"), a, b, c, d);
 	}
 
 	/* hardcoded address as backup */
 	else
 	{
 		fprintf(stderr, "Failed to discover hostname. Defaulted to 192.168.1.107. \n");
-		UE_LOG(LogTemp, Log, TEXT("Failed to discover hostname. Defaulted to 192.168.1.104. \n"));
+		UE_LOG(YourLog, Log, TEXT("Failed to discover hostname. Defaulted to 192.168.1.104. \n"));
 		server.sin_addr.S_un.S_un_b.s_b1 = (unsigned char)192;
 		server.sin_addr.S_un.S_un_b.s_b2 = (unsigned char)168;
 		server.sin_addr.S_un.S_un_b.s_b3 = (unsigned char)1;
 		server.sin_addr.S_un.S_un_b.s_b4 = (unsigned char)104;
 	}
 
+
+
 	//doesn't crash when stalled here, bind seems to be the tricky part
+	UE_LOG(YourLog, Log, TEXT("about to bind"));
 
 	/* Bind address to socket */
 	if (bind(sd, (struct sockaddr *)&server,
 		sizeof(struct sockaddr_in)) == -1)
 	{
+		int errno = WSAGetLastError();
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Could not bind address to socket"));
 		fprintf(stderr, "Could not bind address to socket.\n");
-		UE_LOG(LogTemp, Log, TEXT("Could not bind address to socket.\n"));
+		UE_LOG(YourLog, Fatal, TEXT("Could not bind address to socket due to %d.\n"), errno);
 		closesocket(sd);
 		WSACleanup();
-		return 3;
+		return errno;
 	}
 
 	int client_length = (int)sizeof(struct sockaddr_in);
@@ -244,10 +252,10 @@ float receive(){
 	//}
 
 	while (true){
-		UE_LOG(LogTemp, Log, TEXT("KillThread is %killThread"));
+		UE_LOG(YourLog, Warning, TEXT("KillThread is %d"), killThread);
 		if (killThread == true) {
 			fprintf(stderr, "KillThread: ending server for FreePIE.\n");
-			UE_LOG(LogTemp, Log, TEXT("KillThread: ending server for FreePIE.\n"));
+			UE_LOG(YourLog, Warning, TEXT("KillThread: ending server for FreePIE.\n"));
 			closesocket(sd);
 			WSACleanup();
 			return 5555;
@@ -274,7 +282,7 @@ float receive(){
 		int nError = WSAGetLastError();
 		if (nError != WSAEWOULDBLOCK&&nError != 0)
 		{
-			UE_LOG(LogTemp, Log, TEXT("Winsock error code\r\n"));
+			UE_LOG(YourLog, Log, TEXT("Winsock error code\r\n"));
 			std::cout << "Winsock error code: " << nError << "\r\n";
 			std::cout << "Server disconnected!\r\n";
 			return 9000;

@@ -4,7 +4,7 @@
 #include "GameFramework/Character.h"
 #include "PhoneCharacter.generated.h"
 
-
+DECLARE_LOG_CATEGORY_EXTERN(YourLog, Log, All);
 UCLASS(meta = (BlueprintSpawnableComponent), Blueprintable)
 class PHONEGAME_API APhoneCharacter : public ACharacter
 {
