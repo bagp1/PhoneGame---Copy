@@ -1,0 +1,6 @@
+[15:06:12.00778-  5196] UE4Editor.exe   ltc_game.cpp(5356)    DllMain                        DLLMain DLL_PROCESS_DETACH
+[15:06:12.00778-  5196] UE4Editor.exe   console.h(91)         CConsole::~CConsole            ERROR! Console window had not been created.
+[15:06:12.00779-  5196] UE4Editor.exe   console.h(100)        CConsole::~CConsole            ERROR! Console widget had not been created.
+[15:06:12.00779-  5196] UE4Editor.exe   ../common/hooks.h(84) CHookMgr::~CHookMgr            Unhooking remaining 30 hook(s)
+[15:06:12.00953-  5196] UE4Editor.exe   ../common/crash.h(58) CCrashMgr::~CCrashMgr          CrashMgr shutting down.
+UE4Editor.exe has triggered a breakpoint.
