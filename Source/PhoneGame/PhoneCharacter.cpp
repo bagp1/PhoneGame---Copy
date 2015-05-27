@@ -38,6 +38,9 @@ float mx; float my; float mz;
 float GoogleYaw; float GooglePitch; float GoogleRoll;
 bool killThread;
 
+const int BUFFER_SIZE = 8192;
+char UDPReceiveBuffer[BUFFER_SIZE];
+
 float getFloat(char buffer[], int offset)
 {
 	Datum result;
@@ -90,6 +93,13 @@ FVector APhoneCharacter::getGyroVector(){
 	//return data.gyro;
 	//UE_LOG(LogTemp, Log, TEXT("Getting Gyro Vector"));
 	return FVector(gx, gy, gz);
+	//return FVector(1, 2, 3);
+}
+
+FVector APhoneCharacter::getOrientationVector(){
+	//return data.gyro;
+	//UE_LOG(LogTemp, Log, TEXT("Getting Gyro Vector"));
+	return FVector(GoogleYaw, GooglePitch, GoogleRoll);
 	//return FVector(1, 2, 3);
 }
 
@@ -159,9 +169,6 @@ float receive(){
 	struct sockaddr_in server, client;
 	WSADATA wsaData;
 
-	const int BUFFER_SIZE = 8192;
-	char buffer[BUFFER_SIZE];
-
 	/* Open windows connection */
 	if (WSAStartup(0x0101, &wsaData) != 0)//variable w is a structure of WSADATA form.
 	{
@@ -181,6 +188,9 @@ float receive(){
 		WSACleanup();
 		return 2;
 	}
+
+	u_long iMode = 1;
+	ioctlsocket(sd, FIONBIO, &iMode);
 
 	/* Clear out server struct */
 	memset((void *)&server, '\0', sizeof(struct sockaddr_in));
@@ -226,8 +236,6 @@ float receive(){
 		server.sin_addr.S_un.S_un_b.s_b4 = (unsigned char)104;
 	}
 
-
-
 	//doesn't crash when stalled here, bind seems to be the tricky part
 	UE_LOG(YourLog, Log, TEXT("about to bind"));
 
@@ -252,6 +260,7 @@ float receive(){
 	//}
 
 	while (true){
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("reading"));
 		UE_LOG(YourLog, Warning, TEXT("KillThread is %d"), killThread);
 		if (killThread == true) {
 			fprintf(stderr, "KillThread: ending server for FreePIE.\n");
@@ -264,7 +273,7 @@ float receive(){
 		//std::cout << "Reading a datagram" << std::endl;
 		//GEngine->AddOnScreenDebugMessage(1, 5.f, FColor::Black, TEXT("about to read")); //GEngine->
 		/* Receive bytes from client */
-		bytes_received = recvfrom(sd, buffer, BUFFER_SIZE, 0,
+		bytes_received = recvfrom(sd, UDPReceiveBuffer, BUFFER_SIZE, 0,
 			(struct sockaddr *)&client, &client_length);
 		/*if (bytes_received < 0)
 		{
@@ -288,9 +297,11 @@ float receive(){
 			return 9000;
 		}
 
-		else if (bytes_received > 0) parseDatagram((char*)buffer);
+		else if (bytes_received > 0) parseDatagram((char*)UDPReceiveBuffer);
 		//std::cout << (int)client.sin_addr.S_un.S_un_b.s_b1 << '.' << (int)client.sin_addr.S_un.S_un_b.s_b2 << '.' << (int)client.sin_addr.S_un.S_un_b.s_b3 << '.' << (int)client.sin_addr.S_un.S_un_b.s_b4 << std::endl;
 		//fprintf(stderr, buffer);
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("sleeping"));
+		Sleep(10);
 	}
 	return 2;
 }
