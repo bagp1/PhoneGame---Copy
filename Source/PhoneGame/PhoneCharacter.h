@@ -27,5 +27,6 @@ public:
 	//float getFloat(char[] , int);
 	UFUNCTION(Blueprintpure, Category = GAME, meta = (WorldContext = "Phone Connection")) FVector getGyroVector(); // Category = "connection"
 	UFUNCTION(Blueprintpure, Category = GAME, meta = (WorldContext = "Phone Connection")) FVector getOrientationVector();
+	UFUNCTION(Blueprintpure, Category = GAME, meta = (WorldContext = "Phone Connection")) FVector getAccelerationVector();
 	
 };

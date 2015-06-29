@@ -19,6 +19,9 @@ union Datum;
 void parseDatagram(char[]);
 float getFloat(char[], int);
 float receive();
+void closeConnection(SOCKET);
+
+std::thread* pollingThread;
 
 DEFINE_LOG_CATEGORY(YourLog);
 
@@ -31,7 +34,6 @@ struct PhoneData{
 	FVector gyro;
 };
 
-std::thread pollingThread;
 float ax; float ay; float az;
 float gx; float gy; float gz;
 float mx; float my; float mz;
@@ -62,8 +64,9 @@ APhoneCharacter::APhoneCharacter(const FObjectInitializer& ObjectInitializer)
 void APhoneCharacter::BeginPlay()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Gamee Starto"));
-	std::thread pollingThread(receive);
-	pollingThread.detach();
+	killThread = false;
+	pollingThread = new std::thread(receive);
+	pollingThread->detach();
 
 	Super::BeginPlay();
 
@@ -72,6 +75,8 @@ void APhoneCharacter::BeginPlay()
 void APhoneCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason){
 	//pollingThread.~thread();
 	killThread = true;
+	//pollingThread.~thread();//block until thread closes before closing the parent character
+	std::this_thread::sleep_for(std::chrono::milliseconds(5));
 	Super::EndPlay(EndPlayReason);
 }
 
@@ -89,10 +94,17 @@ void APhoneCharacter::SetupPlayerInputComponent(class UInputComponent* InputComp
 
 }
 
+//deprecated, use orientation rather than gyro 
 FVector APhoneCharacter::getGyroVector(){
 	//return data.gyro;
 	//UE_LOG(LogTemp, Log, TEXT("Getting Gyro Vector"));
 	return FVector(gx, gy, gz);
+	//return FVector(1, 2, 3);
+}
+
+FVector APhoneCharacter::getAccelerationVector(){
+	//UE_LOG(LogTemp, Log, TEXT("Getting Gyro Vector"));
+	return FVector(ax, ay, az);
 	//return FVector(1, 2, 3);
 }
 
@@ -147,11 +159,20 @@ void parseDatagram(char buffer[]){
 	std::cout << "GoogleYaw " << GoogleYaw << " GooglePitch " << GooglePitch << " GoogleRoll " << GoogleRoll << std::endl;
 
 	//getfloat here
-	FString result = FString::SanitizeFloat(gy);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, *result);
+	FString resultgx = FString::SanitizeFloat(gx);
+	FString resultgy = FString::SanitizeFloat(gy);
+	FString resultgz = FString::SanitizeFloat(gz);
+	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Blue, resultgx + ", " + resultgy + ", "+ resultgz);
 }
 
+void closeConnection(SOCKET sd){
+	fprintf(stderr, "KillThread: ending server for FreePIE. \n");
+	UE_LOG(YourLog, Warning, TEXT("KillThread: ending server for FreePIE.\n"));
+	UE_LOG(YourLog, Fatal, TEXT("is joke"));//Fatal rather than warning maybe
 
+	closesocket(sd);
+	WSACleanup();
+}
 
 float receive(){
 
@@ -189,6 +210,7 @@ float receive(){
 		return 2;
 	}
 
+	//non blocking stuff I think
 	u_long iMode = 1;
 	ioctlsocket(sd, FIONBIO, &iMode);
 
@@ -206,8 +228,6 @@ float receive(){
 	char host_name[256];
 	gethostname(host_name, sizeof(host_name));
 	hostent *hp = gethostbyname(host_name);
-
-	
 
 	/* Check for NULL pointer */
 	if (hp != NULL)
@@ -243,28 +263,39 @@ float receive(){
 	if (bind(sd, (struct sockaddr *)&server,
 		sizeof(struct sockaddr_in)) == -1)
 	{
-		int errno = WSAGetLastError();
+		int errnum = -1;
+		errnum = WSAGetLastError();
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Could not bind address to socket"));
 		fprintf(stderr, "Could not bind address to socket.\n");
-		UE_LOG(YourLog, Fatal, TEXT("Could not bind address to socket due to %d.\n"), errno);
+		//UE_LOG(YourLog, Warning, TEXT("tryibng to print message"));
+		//UE_LOG(YourLog, Warning, TEXT("Could not bind address to socket due to %d.\n"), errnum);//Seems like Fatal logging triggers a breakpoint
+		UE_LOG(YourLog, Fatal, TEXT("Could not bind address to socket due to %d.\n"), errnum);//Fatal rather than warning maybe
 		closesocket(sd);
 		WSACleanup();
-		return errno;
+		return errnum;
 	}
 
 	int client_length = (int)sizeof(struct sockaddr_in);
 	int bytes_received;
 
-	//while (true){
-//		if (killThread) return 0;
-	//}
-
-	while (true){
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("reading"));
-		UE_LOG(YourLog, Warning, TEXT("KillThread is %d"), killThread);
+	/*while (true){
+		Sleep(50);
 		if (killThread == true) {
+			//closeConnection(sd); 
+			
 			fprintf(stderr, "KillThread: ending server for FreePIE.\n");
 			UE_LOG(YourLog, Warning, TEXT("KillThread: ending server for FreePIE.\n"));
+			closesocket(sd);
+			WSACleanup();
+			return 0; }
+	}*/
+
+	while (true){
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("reading"));
+		//UE_LOG(YourLog, Warning, TEXT("KillThread is %d"), killThread);
+		if (killThread == true) {
+			fprintf(stderr, "KillThread: ending server for FreePIE.\n");
+			//UE_LOG(YourLog, Warning, TEXT("KillThread: ending server for FreePIE.\n"));//this will break because if killthread then game is closing
 			closesocket(sd);
 			WSACleanup();
 			return 5555;
@@ -301,7 +332,7 @@ float receive(){
 		//std::cout << (int)client.sin_addr.S_un.S_un_b.s_b1 << '.' << (int)client.sin_addr.S_un.S_un_b.s_b2 << '.' << (int)client.sin_addr.S_un.S_un_b.s_b3 << '.' << (int)client.sin_addr.S_un.S_un_b.s_b4 << std::endl;
 		//fprintf(stderr, buffer);
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("sleeping"));
-		Sleep(10);
+		Sleep(3);
 	}
 	return 2;
 }

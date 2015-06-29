@@ -10,4 +10,11 @@ I can't seem to get the icon to not exclude and it's required to be in Build/Win
 
 TODO
 add time since polled variable to scale input in blueprint based off when it was last accessed
-Crashes during run due to a memory access issue
+add a practise dummy to hit. Most simple is a second ghost-real sword pair with an AI controlled ghost sword hovering nearby
+
+Notes to self
+Android orientation is in radians
+0 => -pi, pi => 0 
+except pitch which goes 0 => -pi/2 => 0 => pi/2 => 0 
+whether pitch is negative or positive depends on whether yaw is positive or negative. Yaw changes when pitch goes through pi/2
+Android XYZ is yaw pitch roll while UE4 assumes pitch yaw roll
