@@ -1,3 +1,0 @@
-Unhandled exception at 0x000007FEDC5D0102 (UE4Editor-SlateCore.dll) in UE4Editor.exe: 0xC0000005: Access violation reading location 0xFFFFFFFFFFFFFFFF
-
-seems to occur in some UE4 SparseArray.h on line 218 	Element.~ElementType();
