@@ -65,6 +65,7 @@ void APhoneCharacter::BeginPlay()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Gamee Starto"));
 	killThread = false;
+	
 	pollingThread = new std::thread(receive);
 	pollingThread->detach();
 
