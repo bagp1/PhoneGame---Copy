@@ -243,6 +243,7 @@ float receive(){
 		FString Fs = FString(ANSI_TO_TCHAR(host_name));
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, Fs);
 		std::cout << "Hostname: " << host_name << " " << ((int)hp->h_addr_list[0][0] & 0x256) << "." << (unsigned int)hp->h_addr_list[0][1] << "." << (unsigned int)hp->h_addr_list[0][2] << "." << (unsigned int)hp->h_addr_list[0][3] << std::endl;
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, Fs);
 		UE_LOG(YourLog, Warning, TEXT("found address: %d.%d.%d.%d"), a, b, c, d);
 	}
 
