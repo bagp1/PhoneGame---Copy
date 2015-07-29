@@ -13,9 +13,6 @@
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <winsock2.h>
 #include "HideWindowsPlatformTypes.h"
-#include <fstream>
-
-std::ofstream phoneDataLog;
 
 struct PhoneData;
 union Datum;
@@ -293,12 +290,6 @@ float receive(){
 			WSACleanup();
 			return 0; }
 	}*/
-	//FString dataLogPath = FPaths::GameDir() + FString("DataLogging/exampledata.txt");
-	//FString dataLogPath = FString("C://Users/Brett Paradine/Documents/Unreal Projects/copies - using this/DataLogging/example.txt");
-	//phoneDataLog.open(*dataLogPath);
-	//phoneDataLog << "Writing this to a file.\n";
-	//phoneDataLog.close();
-	//TODO destroy dataLogPath
 
 	while (true){
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("reading"));
