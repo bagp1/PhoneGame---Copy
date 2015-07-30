@@ -171,9 +171,7 @@ void parseDatagram(char buffer[]){
 	FString resultgz = FString::SanitizeFloat(gz);
 	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Blue, resultgx + ", " + resultgy + ", "+ resultgz);
 
-
-	DataLogFile << "pack:" << packetcount << " ax, " << ax << " ay, " << ay << " az, " << az << "\n"; \
-	DataLogFile << "GoogleYaw, " << GoogleYaw << " GooglePitch, " << GooglePitch << " GoogleRoll, " << GoogleRoll << "\n";
+	DataLogFile << ax << ", " << ay << ", " << az << ", " << GoogleYaw << ", " << GooglePitch << ", " << GoogleRoll << "\n";
 }
 
 void closeConnection(SOCKET sd){
@@ -311,9 +309,10 @@ float receive(){
 	char buffer[80];
 	//strftime(buffer, 200, "%S-%M-%H_%a-%b-%G", timeinfo);
 	strftime(buffer, 200, "%S-%M-%H_%d-%b-%Y", timeinfo);
-	FString path = FPaths::GameDir() + "/DataLog/" + buffer + ".txt";
+	FString path = FPaths::GameDir() + "/DataLog/" + buffer + ".csv";
 	DataLogFile.open(*path, std::ios::out);
-	
+	DataLogFile << "acceleration:x,y,z,Orientation:yaw,pitch,roll\n";
+
 	while (true){
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("reading"));
 		//UE_LOG(YourLog, Warning, TEXT("KillThread is %d"), killThread);
