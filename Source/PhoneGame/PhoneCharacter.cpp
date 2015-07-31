@@ -9,6 +9,9 @@
 #include <stdio.h>
 #include <tchar.h>
 #include <iostream>
+#include <fstream>
+#include <ctime>
+#include <time.h>
 #include <thread>
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <winsock2.h>
@@ -33,6 +36,9 @@ union Datum{
 struct PhoneData{
 	FVector gyro;
 };
+
+std::fstream DataLogFile;
+int packetcount = 0;
 
 float ax; float ay; float az;
 float gx; float gy; float gz;
@@ -155,15 +161,17 @@ void parseDatagram(char buffer[]){
 	GooglePitch = getFloat(buffer, index + 4);
 	GoogleRoll = getFloat(buffer, index + 8);
 
-	std::cout << "hasOrientation is " << (int)hasOrientation << " and hasRaw is " << (int)hasRaw << std::endl;
-	std::cout << "ax " << ax << " ay " << ay << " az " << az << std::endl;
-	std::cout << "GoogleYaw " << GoogleYaw << " GooglePitch " << GooglePitch << " GoogleRoll " << GoogleRoll << std::endl;
+	//std::cout << "hasOrientation is " << (int)hasOrientation << " and hasRaw is " << (int)hasRaw << std::endl;
+	//std::cout << "ax " << ax << " ay " << ay << " az " << az << std::endl;
+	//std::cout << "GoogleYaw " << GoogleYaw << " GooglePitch " << GooglePitch << " GoogleRoll " << GoogleRoll << std::endl;
 
 	//getfloat here
 	FString resultgx = FString::SanitizeFloat(gx);
 	FString resultgy = FString::SanitizeFloat(gy);
 	FString resultgz = FString::SanitizeFloat(gz);
 	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Blue, resultgx + ", " + resultgy + ", "+ resultgz);
+
+	DataLogFile << ax << ", " << ay << ", " << az << ", " << GoogleYaw << ", " << GooglePitch << ", " << GoogleRoll << "\n";
 }
 
 void closeConnection(SOCKET sd){
@@ -292,11 +300,26 @@ float receive(){
 			return 0; }
 	}*/
 
+	//FString path = FPaths::GameDir() + "/DataLog/log.txt";
+	time_t timeStamp = time(0);
+	char* timeString = std::ctime(&timeStamp);	
+
+	struct tm * timeinfo;
+	timeinfo = localtime(&timeStamp);
+
+	char buffer[80];
+	//strftime(buffer, 200, "%S-%M-%H_%a-%b-%G", timeinfo);
+	strftime(buffer, 200, "%S-%M-%H_%d-%b-%Y", timeinfo);
+	FString path = FPaths::GameDir() + "/DataLog/" + buffer + ".csv";
+	DataLogFile.open(*path, std::ios::out);
+	DataLogFile << "acceleration:x,y,z,Orientation:yaw,pitch,roll\n";
+
 	while (true){
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("reading"));
 		//UE_LOG(YourLog, Warning, TEXT("KillThread is %d"), killThread);
 		if (killThread == true) {
 			fprintf(stderr, "KillThread: ending server for FreePIE.\n");
+			DataLogFile.close();
 			//UE_LOG(YourLog, Warning, TEXT("KillThread: ending server for FreePIE.\n"));//this will break because if killthread then game is closing
 			closesocket(sd);
 			WSACleanup();

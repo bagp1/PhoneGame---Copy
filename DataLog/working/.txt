@@ -1,0 +1,438 @@
+pack:0 ax, -0.0122223 ay, 0.223099 az, 9.77298
+GoogleYaw, -1.03568 GooglePitch, -0.0262875 GoogleRoll, 0.00353728
+pack:0 ax, -0.0122223 ay, 0.223099 az, 9.77298
+GoogleYaw, -1.03589 GooglePitch, -0.026407 GoogleRoll, 0.00355576
+pack:0 ax, -0.0122223 ay, 0.223099 az, 9.77298
+GoogleYaw, -1.03589 GooglePitch, -0.026407 GoogleRoll, 0.00355576
+pack:0 ax, -0.0122223 ay, 0.223099 az, 9.77298
+GoogleYaw, -1.03589 GooglePitch, -0.026407 GoogleRoll, 0.00355576
+pack:0 ax, -0.0336456 ay, 0.265945 az, 9.78488
+GoogleYaw, -1.03589 GooglePitch, -0.026407 GoogleRoll, 0.00355576
+pack:0 ax, -0.0336456 ay, 0.265945 az, 9.78488
+GoogleYaw, -1.03561 GooglePitch, -0.0262787 GoogleRoll, 0.0034769
+pack:0 ax, -0.0193634 ay, 0.244522 az, 9.83249
+GoogleYaw, -1.03565 GooglePitch, -0.02631 GoogleRoll, 0.00346364
+pack:0 ax, -0.0312653 ay, 0.235001 az, 9.71585
+GoogleYaw, -1.03565 GooglePitch, -0.02631 GoogleRoll, 0.00346364
+pack:0 ax, -0.0312653 ay, 0.235001 az, 9.71585
+GoogleYaw, -1.03565 GooglePitch, -0.02631 GoogleRoll, 0.00346364
+pack:0 ax, -0.0312653 ay, 0.235001 az, 9.71585
+GoogleYaw, -1.03544 GooglePitch, -0.0262321 GoogleRoll, 0.00338127
+pack:0 ax, -0.0312653 ay, 0.235001 az, 9.71585
+GoogleYaw, -1.03544 GooglePitch, -0.0262321 GoogleRoll, 0.00338127
+pack:0 ax, -0.0503082 ay, 0.273087 az, 9.7468
+GoogleYaw, -1.03544 GooglePitch, -0.0262321 GoogleRoll, 0.00338127
+pack:0 ax, -0.0503082 ay, 0.273087 az, 9.7468
+GoogleYaw, -1.03544 GooglePitch, -0.0262321 GoogleRoll, 0.00338127
+pack:0 ax, -0.0503082 ay, 0.273087 az, 9.7468
+GoogleYaw, -1.03544 GooglePitch, -0.0262321 GoogleRoll, 0.00338127
+pack:0 ax, -0.0503082 ay, 0.273087 az, 9.7468
+GoogleYaw, -1.03527 GooglePitch, -0.0261347 GoogleRoll, 0.00336387
+pack:0 ax, -0.0384064 ay, 0.273087 az, 9.74203
+GoogleYaw, -1.03527 GooglePitch, -0.0261347 GoogleRoll, 0.00336387
+pack:0 ax, -0.0384064 ay, 0.273087 az, 9.74203
+GoogleYaw, -1.03541 GooglePitch, -0.0261883 GoogleRoll, 0.00342171
+pack:0 ax, -0.0384064 ay, 0.273087 az, 9.74203
+GoogleYaw, -1.03541 GooglePitch, -0.0261883 GoogleRoll, 0.00342171
+pack:0 ax, -0.0384064 ay, 0.273087 az, 9.74203
+GoogleYaw, -1.03541 GooglePitch, -0.0261883 GoogleRoll, 0.00342171
+pack:0 ax, -0.055069 ay, 0.211197 az, 9.76822
+GoogleYaw, -1.03541 GooglePitch, -0.0261883 GoogleRoll, 0.00342171
+pack:0 ax, -0.055069 ay, 0.211197 az, 9.76822
+GoogleYaw, -1.03552 GooglePitch, -0.0262509 GoogleRoll, 0.00342676
+pack:0 ax, -0.0312653 ay, 0.251663 az, 9.80392
+GoogleYaw, -1.03552 GooglePitch, -0.0262509 GoogleRoll, 0.00342676
+pack:0 ax, -0.0312653 ay, 0.251663 az, 9.80392
+GoogleYaw, -1.03532 GooglePitch, -0.0260876 GoogleRoll, 0.00349877
+pack:0 ax, -0.0336456 ay, 0.263565 az, 9.75632
+GoogleYaw, -1.03532 GooglePitch, -0.0260876 GoogleRoll, 0.00349877
+pack:0 ax, -0.0336456 ay, 0.263565 az, 9.75632
+GoogleYaw, -1.03532 GooglePitch, -0.0260876 GoogleRoll, 0.00349877
+pack:0 ax, -0.0336456 ay, 0.263565 az, 9.75632
+GoogleYaw, -1.03524 GooglePitch, -0.026044 GoogleRoll, 0.00348699
+pack:0 ax, -0.0336456 ay, 0.263565 az, 9.75632
+GoogleYaw, -1.03524 GooglePitch, -0.026044 GoogleRoll, 0.00348699
+pack:0 ax, -0.0431671 ay, 0.244522 az, 9.75156
+GoogleYaw, -1.03524 GooglePitch, -0.026044 GoogleRoll, 0.00348699
+pack:0 ax, -0.0431671 ay, 0.244522 az, 9.75156
+GoogleYaw, -1.03524 GooglePitch, -0.026044 GoogleRoll, 0.00348699
+pack:0 ax, -0.0431671 ay, 0.244522 az, 9.75156
+GoogleYaw, -1.03524 GooglePitch, -0.026044 GoogleRoll, 0.00348699
+pack:0 ax, -0.0431671 ay, 0.244522 az, 9.75156
+GoogleYaw, -1.03523 GooglePitch, -0.026057 GoogleRoll, 0.0034637
+pack:0 ax, -0.0384064 ay, 0.254044 az, 9.80154
+GoogleYaw, -1.03523 GooglePitch, -0.026057 GoogleRoll, 0.0034637
+pack:0 ax, -0.0384064 ay, 0.254044 az, 9.80154
+GoogleYaw, -1.03523 GooglePitch, -0.0260358 GoogleRoll, 0.00349459
+pack:0 ax, -0.0384064 ay, 0.254044 az, 9.80154
+GoogleYaw, -1.03523 GooglePitch, -0.0260358 GoogleRoll, 0.00349459
+pack:0 ax, -0.0384064 ay, 0.254044 az, 9.80154
+GoogleYaw, -1.03523 GooglePitch, -0.0260358 GoogleRoll, 0.00349459
+pack:0 ax, -0.0384064 ay, 0.239761 az, 9.63254
+GoogleYaw, -1.03523 GooglePitch, -0.0260358 GoogleRoll, 0.00349459
+pack:0 ax, -0.0384064 ay, 0.239761 az, 9.63254
+GoogleYaw, -1.03525 GooglePitch, -0.0260434 GoogleRoll, 0.00350734
+pack:0 ax, -0.0384064 ay, 0.244522 az, 9.76584
+GoogleYaw, -1.03515 GooglePitch, -0.0259862 GoogleRoll, 0.00350087
+pack:0 ax, -0.0288849 ay, 0.208817 az, 9.84201
+GoogleYaw, -1.03515 GooglePitch, -0.0259862 GoogleRoll, 0.00350087
+pack:0 ax, -0.0288849 ay, 0.208817 az, 9.84201
+GoogleYaw, -1.03515 GooglePitch, -0.0259862 GoogleRoll, 0.00350087
+pack:0 ax, -0.0288849 ay, 0.208817 az, 9.84201
+GoogleYaw, -1.03507 GooglePitch, -0.0259249 GoogleRoll, 0.00351383
+pack:0 ax, -0.0288849 ay, 0.208817 az, 9.84201
+GoogleYaw, -1.03507 GooglePitch, -0.0259249 GoogleRoll, 0.00351383
+pack:0 ax, -0.0122223 ay, 0.29213 az, 9.7706
+GoogleYaw, -1.03507 GooglePitch, -0.0259249 GoogleRoll, 0.00351383
+pack:0 ax, -0.0122223 ay, 0.29213 az, 9.7706
+GoogleYaw, -1.03507 GooglePitch, -0.0259249 GoogleRoll, 0.00351383
+pack:0 ax, -0.0122223 ay, 0.29213 az, 9.7706
+GoogleYaw, -1.03507 GooglePitch, -0.0259249 GoogleRoll, 0.00351383
+pack:0 ax, -0.0122223 ay, 0.29213 az, 9.7706
+GoogleYaw, -1.03477 GooglePitch, -0.0257579 GoogleRoll, 0.00348217
+pack:0 ax, -0.0288849 ay, 0.261185 az, 9.83487
+GoogleYaw, -1.03477 GooglePitch, -0.0257579 GoogleRoll, 0.00348217
+pack:0 ax, -0.0288849 ay, 0.261185 az, 9.83487
+GoogleYaw, -1.03489 GooglePitch, -0.0258973 GoogleRoll, 0.00337459
+pack:0 ax, -0.0288849 ay, 0.261185 az, 9.83487
+GoogleYaw, -1.03489 GooglePitch, -0.0258973 GoogleRoll, 0.00337459
+pack:0 ax, -0.0288849 ay, 0.261185 az, 9.83487
+GoogleYaw, -1.03489 GooglePitch, -0.0258973 GoogleRoll, 0.00337459
+pack:0 ax, -0.0336456 ay, 0.23262 az, 9.71585
+GoogleYaw, -1.03489 GooglePitch, -0.0258973 GoogleRoll, 0.00337459
+pack:0 ax, -0.0336456 ay, 0.23262 az, 9.71585
+GoogleYaw, -1.03488 GooglePitch, -0.0259104 GoogleRoll, 0.00333778
+pack:0 ax, -0.0384064 ay, 0.315933 az, 9.76346
+GoogleYaw, -1.03475 GooglePitch, -0.0258361 GoogleRoll, 0.00333021
+pack:0 ax, -0.0384064 ay, 0.261185 az, 9.7587
+GoogleYaw, -1.03475 GooglePitch, -0.0258361 GoogleRoll, 0.00333021
+pack:0 ax, -0.0384064 ay, 0.261185 az, 9.7587
+GoogleYaw, -1.03475 GooglePitch, -0.0258361 GoogleRoll, 0.00333021
+pack:0 ax, -0.0384064 ay, 0.261185 az, 9.7587
+GoogleYaw, -1.0351 GooglePitch, -0.0260545 GoogleRoll, 0.0033286
+pack:0 ax, -0.0384064 ay, 0.261185 az, 9.7587
+GoogleYaw, -1.0351 GooglePitch, -0.0260545 GoogleRoll, 0.0033286
+pack:0 ax, -0.0574493 ay, 0.256424 az, 9.74918
+GoogleYaw, -1.0351 GooglePitch, -0.0260545 GoogleRoll, 0.0033286
+pack:0 ax, -0.0574493 ay, 0.256424 az, 9.74918
+GoogleYaw, -1.0351 GooglePitch, -0.0260545 GoogleRoll, 0.0033286
+pack:0 ax, -0.0574493 ay, 0.256424 az, 9.74918
+GoogleYaw, -1.0351 GooglePitch, -0.0260545 GoogleRoll, 0.0033286
+pack:0 ax, -0.0574493 ay, 0.256424 az, 9.74918
+GoogleYaw, -1.03513 GooglePitch, -0.0260691 GoogleRoll, 0.00332681
+pack:0 ax, -0.0693512 ay, 0.261185 az, 9.78488
+GoogleYaw, -1.03513 GooglePitch, -0.0260691 GoogleRoll, 0.00332681
+pack:0 ax, -0.0693512 ay, 0.261185 az, 9.78488
+GoogleYaw, -1.03518 GooglePitch, -0.0260678 GoogleRoll, 0.00338916
+pack:0 ax, -0.0693512 ay, 0.261185 az, 9.78488
+GoogleYaw, -1.03518 GooglePitch, -0.0260678 GoogleRoll, 0.00338916
+pack:0 ax, -0.0693512 ay, 0.261185 az, 9.78488
+GoogleYaw, -1.03518 GooglePitch, -0.0260678 GoogleRoll, 0.00338916
+pack:0 ax, 0.0115814 ay, 0.237381 az, 9.68491
+GoogleYaw, -1.03518 GooglePitch, -0.0260678 GoogleRoll, 0.00338916
+pack:0 ax, 0.0115814 ay, 0.237381 az, 9.68491
+GoogleYaw, -1.03532 GooglePitch, -0.0261001 GoogleRoll, 0.0034799
+pack:0 ax, -0.0265045 ay, 0.280228 az, 9.8063
+GoogleYaw, -1.03508 GooglePitch, -0.0260591 GoogleRoll, 0.00329283
+pack:0 ax, -0.016983 ay, 0.261185 az, 9.69919
+GoogleYaw, -1.03508 GooglePitch, -0.0260591 GoogleRoll, 0.00329283
+pack:0 ax, -0.016983 ay, 0.261185 az, 9.69919
+GoogleYaw, -1.03508 GooglePitch, -0.0260591 GoogleRoll, 0.00329283
+pack:0 ax, -0.016983 ay, 0.261185 az, 9.69919
+GoogleYaw, -1.03518 GooglePitch, -0.0261446 GoogleRoll, 0.00325081
+pack:0 ax, -0.016983 ay, 0.261185 az, 9.69919
+GoogleYaw, -1.03518 GooglePitch, -0.0261446 GoogleRoll, 0.00325081
+pack:0 ax, -0.0503082 ay, 0.239761 az, 9.72537
+GoogleYaw, -1.03518 GooglePitch, -0.0261446 GoogleRoll, 0.00325081
+pack:0 ax, -0.0503082 ay, 0.239761 az, 9.72537
+GoogleYaw, -1.03516 GooglePitch, -0.0261718 GoogleRoll, 0.00318887
+pack:0 ax, -0.0407867 ay, 0.254044 az, 9.79202
+GoogleYaw, -1.03512 GooglePitch, -0.0261124 GoogleRoll, 0.0032425
+pack:0 ax, -0.0407867 ay, 0.254044 az, 9.79202
+GoogleYaw, -1.03512 GooglePitch, -0.0261124 GoogleRoll, 0.0032425
+pack:0 ax, -0.036026 ay, 0.251663 az, 9.76346
+GoogleYaw, -1.03514 GooglePitch, -0.026108 GoogleRoll, 0.00327166
+pack:0 ax, -0.036026 ay, 0.251663 az, 9.76346
+GoogleYaw, -1.03514 GooglePitch, -0.026108 GoogleRoll, 0.00327166
+pack:0 ax, -0.0788727 ay, 0.244522 az, 9.79202
+GoogleYaw, -1.03513 GooglePitch, -0.026088 GoogleRoll, 0.00329417
+pack:0 ax, -0.0146027 ay, 0.235001 az, 9.79916
+GoogleYaw, -1.03513 GooglePitch, -0.026088 GoogleRoll, 0.00329417
+pack:0 ax, -0.0146027 ay, 0.235001 az, 9.79916
+GoogleYaw, -1.03513 GooglePitch, -0.026088 GoogleRoll, 0.00329417
+pack:0 ax, -0.0146027 ay, 0.235001 az, 9.79916
+GoogleYaw, -1.03515 GooglePitch, -0.0260109 GoogleRoll, 0.00345131
+pack:0 ax, -0.0146027 ay, 0.235001 az, 9.79916
+GoogleYaw, -1.03515 GooglePitch, -0.0260109 GoogleRoll, 0.00345131
+pack:0 ax, -0.0265045 ay, 0.220718 az, 9.68491
+GoogleYaw, -1.03515 GooglePitch, -0.0260109 GoogleRoll, 0.00345131
+pack:0 ax, -0.0265045 ay, 0.220718 az, 9.68491
+GoogleYaw, -1.03515 GooglePitch, -0.0260109 GoogleRoll, 0.00345131
+pack:0 ax, -0.0265045 ay, 0.220718 az, 9.68491
+GoogleYaw, -1.03515 GooglePitch, -0.0260109 GoogleRoll, 0.00345131
+pack:0 ax, -0.0265045 ay, 0.220718 az, 9.68491
+GoogleYaw, -1.03492 GooglePitch, -0.0259237 GoogleRoll, 0.00336376
+pack:0 ax, -0.0217438 ay, 0.244522 az, 9.85867
+GoogleYaw, -1.03492 GooglePitch, -0.0259237 GoogleRoll, 0.00336376
+pack:0 ax, -0.0217438 ay, 0.244522 az, 9.85867
+GoogleYaw, -1.03472 GooglePitch, -0.0258214 GoogleRoll, 0.00332102
+pack:0 ax, -0.0217438 ay, 0.244522 az, 9.85867
+GoogleYaw, -1.03472 GooglePitch, -0.0258214 GoogleRoll, 0.00332102
+pack:0 ax, -0.0217438 ay, 0.244522 az, 9.85867
+GoogleYaw, -1.03472 GooglePitch, -0.0258214 GoogleRoll, 0.00332102
+pack:0 ax, -0.0455475 ay, 0.23024 az, 9.72775
+GoogleYaw, -1.03472 GooglePitch, -0.0258214 GoogleRoll, 0.00332102
+pack:0 ax, -0.0455475 ay, 0.23024 az, 9.72775
+GoogleYaw, -1.03464 GooglePitch, -0.0257988 GoogleRoll, 0.00328153
+pack:0 ax, -0.0384064 ay, 0.268326 az, 9.70395
+GoogleYaw, -1.03459 GooglePitch, -0.0257397 GoogleRoll, 0.00332608
+pack:0 ax, -0.0479279 ay, 0.251663 az, 9.77298
+GoogleYaw, -1.03459 GooglePitch, -0.0257397 GoogleRoll, 0.00332608
+pack:0 ax, -0.0479279 ay, 0.251663 az, 9.77298
+GoogleYaw, -1.03459 GooglePitch, -0.0257397 GoogleRoll, 0.00332608
+pack:0 ax, -0.0479279 ay, 0.251663 az, 9.77298
+GoogleYaw, -1.03469 GooglePitch, -0.0257939 GoogleRoll, 0.00333469
+pack:0 ax, -0.0479279 ay, 0.251663 az, 9.77298
+GoogleYaw, -1.03469 GooglePitch, -0.0257939 GoogleRoll, 0.00333469
+pack:0 ax, -0.0431671 ay, 0.244522 az, 9.7825
+GoogleYaw, -1.03469 GooglePitch, -0.0257939 GoogleRoll, 0.00333469
+pack:0 ax, -0.0431671 ay, 0.244522 az, 9.7825
+GoogleYaw, -1.03469 GooglePitch, -0.0257939 GoogleRoll, 0.00333469
+pack:0 ax, -0.0431671 ay, 0.244522 az, 9.7825
+GoogleYaw, -1.03469 GooglePitch, -0.0257939 GoogleRoll, 0.00333469
+pack:0 ax, -0.0431671 ay, 0.244522 az, 9.7825
+GoogleYaw, -1.03472 GooglePitch, -0.0257937 GoogleRoll, 0.00337508
+pack:0 ax, -0.0503082 ay, 0.258804 az, 9.78964
+GoogleYaw, -1.03472 GooglePitch, -0.0257937 GoogleRoll, 0.00337508
+pack:0 ax, -0.0503082 ay, 0.258804 az, 9.78964
+GoogleYaw, -1.03471 GooglePitch, -0.0257684 GoogleRoll, 0.00340777
+pack:0 ax, -0.0503082 ay, 0.258804 az, 9.78964
+GoogleYaw, -1.03471 GooglePitch, -0.0257684 GoogleRoll, 0.00340777
+pack:0 ax, -0.0503082 ay, 0.258804 az, 9.78964
+GoogleYaw, -1.03471 GooglePitch, -0.0257684 GoogleRoll, 0.00340777
+pack:0 ax, -0.0907745 ay, 0.249283 az, 9.7825
+GoogleYaw, -1.03476 GooglePitch, -0.0257714 GoogleRoll, 0.00345334
+pack:0 ax, -0.0574493 ay, 0.254044 az, 9.69681
+GoogleYaw, -1.03476 GooglePitch, -0.0257714 GoogleRoll, 0.00345334
+pack:0 ax, -0.0574493 ay, 0.254044 az, 9.69681
+GoogleYaw, -1.03489 GooglePitch, -0.0257526 GoogleRoll, 0.00362564
+pack:0 ax, -0.0479279 ay, 0.273087 az, 9.85391
+GoogleYaw, -1.03489 GooglePitch, -0.0257526 GoogleRoll, 0.00362564
+pack:0 ax, -0.0479279 ay, 0.273087 az, 9.85391
+GoogleYaw, -1.03489 GooglePitch, -0.0257526 GoogleRoll, 0.00362564
+pack:0 ax, -0.0479279 ay, 0.273087 az, 9.85391
+GoogleYaw, -1.03495 GooglePitch, -0.0257585 GoogleRoll, 0.00367972
+pack:0 ax, -0.0479279 ay, 0.273087 az, 9.85391
+GoogleYaw, -1.03495 GooglePitch, -0.0257585 GoogleRoll, 0.00367972
+pack:0 ax, -0.00508118 ay, 0.254044 az, 9.70871
+GoogleYaw, -1.03495 GooglePitch, -0.0257585 GoogleRoll, 0.00367972
+pack:0 ax, -0.00508118 ay, 0.254044 az, 9.70871
+GoogleYaw, -1.03495 GooglePitch, -0.0257585 GoogleRoll, 0.00367972
+pack:0 ax, -0.00508118 ay, 0.254044 az, 9.70871
+GoogleYaw, -1.03495 GooglePitch, -0.0257585 GoogleRoll, 0.00367972
+pack:0 ax, -0.00508118 ay, 0.254044 az, 9.70871
+GoogleYaw, -1.03506 GooglePitch, -0.025815 GoogleRoll, 0.00369703
+pack:0 ax, -0.0503082 ay, 0.280228 az, 9.7468
+GoogleYaw, -1.03506 GooglePitch, -0.025815 GoogleRoll, 0.00369703
+pack:0 ax, -0.0503082 ay, 0.280228 az, 9.7468
+GoogleYaw, -1.03494 GooglePitch, -0.0258075 GoogleRoll, 0.00358028
+pack:0 ax, -0.0503082 ay, 0.280228 az, 9.7468
+GoogleYaw, -1.03494 GooglePitch, -0.0258075 GoogleRoll, 0.00358028
+pack:0 ax, -0.0503082 ay, 0.280228 az, 9.7468
+GoogleYaw, -1.03494 GooglePitch, -0.0258075 GoogleRoll, 0.00358028
+pack:0 ax, -0.0431671 ay, 0.237381 az, 9.77536
+GoogleYaw, -1.03494 GooglePitch, -0.0258075 GoogleRoll, 0.00358028
+pack:0 ax, -0.0431671 ay, 0.237381 az, 9.77536
+GoogleYaw, -1.03511 GooglePitch, -0.025886 GoogleRoll, 0.00363145
+pack:0 ax, -0.0336456 ay, 0.261185 az, 9.73489
+GoogleYaw, -1.03505 GooglePitch, -0.0258339 GoogleRoll, 0.00365592
+pack:0 ax, -0.0265045 ay, 0.227859 az, 9.80154
+GoogleYaw, -1.03505 GooglePitch, -0.0258339 GoogleRoll, 0.00365592
+pack:0 ax, -0.0265045 ay, 0.227859 az, 9.80154
+GoogleYaw, -1.03505 GooglePitch, -0.0258339 GoogleRoll, 0.00365592
+pack:0 ax, -0.0265045 ay, 0.227859 az, 9.80154
+GoogleYaw, -1.03506 GooglePitch, -0.0258478 GoogleRoll, 0.00363712
+pack:0 ax, -0.0265045 ay, 0.227859 az, 9.80154
+GoogleYaw, -1.03506 GooglePitch, -0.0258478 GoogleRoll, 0.00363712
+pack:0 ax, -0.00746155 ay, 0.261185 az, 9.75156
+GoogleYaw, -1.03506 GooglePitch, -0.0258478 GoogleRoll, 0.00363712
+pack:0 ax, -0.00746155 ay, 0.261185 az, 9.75156
+GoogleYaw, -1.03506 GooglePitch, -0.0258478 GoogleRoll, 0.00363712
+pack:0 ax, -0.00746155 ay, 0.261185 az, 9.75156
+GoogleYaw, -1.03506 GooglePitch, -0.0258478 GoogleRoll, 0.00363712
+pack:0 ax, -0.00746155 ay, 0.261185 az, 9.75156
+GoogleYaw, -1.03485 GooglePitch, -0.0257416 GoogleRoll, 0.00360395
+pack:0 ax, -0.0479279 ay, 0.268326 az, 9.79916
+GoogleYaw, -1.03481 GooglePitch, -0.0257672 GoogleRoll, 0.00350805
+pack:0 ax, -0.00508118 ay, 0.261185 az, 9.80392
+GoogleYaw, -1.03481 GooglePitch, -0.0257672 GoogleRoll, 0.00350805
+pack:0 ax, -0.00508118 ay, 0.261185 az, 9.80392
+GoogleYaw, -1.03481 GooglePitch, -0.0257672 GoogleRoll, 0.00350805
+pack:0 ax, -0.00508118 ay, 0.261185 az, 9.80392
+GoogleYaw, -1.03489 GooglePitch, -0.0258019 GoogleRoll, 0.00354315
+pack:0 ax, -0.0193634 ay, 0.235001 az, 9.73489
+GoogleYaw, -1.03489 GooglePitch, -0.0258019 GoogleRoll, 0.00354315
+pack:0 ax, -0.0193634 ay, 0.235001 az, 9.73489
+GoogleYaw, -1.03486 GooglePitch, -0.0258311 GoogleRoll, 0.00345083
+pack:0 ax, -0.0693512 ay, 0.280228 az, 9.82773
+GoogleYaw, -1.03486 GooglePitch, -0.0258311 GoogleRoll, 0.00345083
+pack:0 ax, -0.0693512 ay, 0.280228 az, 9.82773
+GoogleYaw, -1.03486 GooglePitch, -0.0258311 GoogleRoll, 0.00345083
+pack:0 ax, -0.0693512 ay, 0.280228 az, 9.82773
+GoogleYaw, -1.03475 GooglePitch, -0.0257865 GoogleRoll, 0.00341086
+pack:0 ax, -0.0407867 ay, 0.29689 az, 9.73965
+GoogleYaw, -1.03475 GooglePitch, -0.0257865 GoogleRoll, 0.00341086
+pack:0 ax, -0.0407867 ay, 0.29689 az, 9.73965
+GoogleYaw, -1.03501 GooglePitch, -0.0258792 GoogleRoll, 0.00353166
+pack:0 ax, -0.0455475 ay, 0.282608 az, 9.83011
+GoogleYaw, -1.03501 GooglePitch, -0.0258792 GoogleRoll, 0.00353166
+pack:0 ax, -0.0455475 ay, 0.282608 az, 9.83011
+GoogleYaw, -1.03531 GooglePitch, -0.026054 GoogleRoll, 0.00355175
+pack:0 ax, -0.0241241 ay, 0.246902 az, 9.73013
+GoogleYaw, -1.03531 GooglePitch, -0.026054 GoogleRoll, 0.00355175
+pack:0 ax, -0.0241241 ay, 0.246902 az, 9.73013
+GoogleYaw, -1.03553 GooglePitch, -0.0261767 GoogleRoll, 0.00356555
+pack:0 ax, -0.790604 ay, -0.317245 az, 11.632
+GoogleYaw, -1.03553 GooglePitch, -0.0261767 GoogleRoll, 0.00356555
+pack:0 ax, -0.790604 ay, -0.317245 az, 11.632
+GoogleYaw, -1.03535 GooglePitch, -0.0249697 GoogleRoll, 0.00701182
+pack:0 ax, -0.150284 ay, 0.235001 az, 8.45663
+GoogleYaw, -1.03535 GooglePitch, -0.0249697 GoogleRoll, 0.00701182
+pack:0 ax, -0.150284 ay, 0.235001 az, 8.45663
+GoogleYaw, -1.03498 GooglePitch, -0.0215924 GoogleRoll, 0.0128904
+pack:0 ax, -0.0479279 ay, 0.242142 az, 10.0777
+GoogleYaw, -1.03498 GooglePitch, -0.0215924 GoogleRoll, 0.0128904
+pack:0 ax, -0.0479279 ay, 0.242142 az, 10.0777
+GoogleYaw, -1.03534 GooglePitch, -0.0215846 GoogleRoll, 0.0122737
+pack:0 ax, 1.20415 ay, 1.27998 az, 9.72775
+GoogleYaw, -1.03534 GooglePitch, -0.0215846 GoogleRoll, 0.0122737
+pack:0 ax, 1.20415 ay, 1.27998 az, 9.72775
+GoogleYaw, -1.03453 GooglePitch, -0.0216152 GoogleRoll, 0.0111288
+pack:0 ax, 0.954208 ay, 1.59419 az, 9.63968
+GoogleYaw, -1.03453 GooglePitch, -0.0216152 GoogleRoll, 0.0111288
+pack:0 ax, 0.954208 ay, 1.59419 az, 9.63968
+GoogleYaw, -1.02309 GooglePitch, -0.0221131 GoogleRoll, 0.0106082
+pack:0 ax, 0.801865 ay, 1.08955 az, 9.97769
+GoogleYaw, -0.992359 GooglePitch, -0.0226501 GoogleRoll, 0.0108537
+pack:0 ax, 0.778061 ay, 0.651566 az, 9.76346
+GoogleYaw, -0.992359 GooglePitch, -0.0226501 GoogleRoll, 0.0108537
+pack:0 ax, 0.778061 ay, 0.651566 az, 9.76346
+GoogleYaw, -0.992359 GooglePitch, -0.0226501 GoogleRoll, 0.0108537
+pack:0 ax, 0.778061 ay, 0.651566 az, 9.76346
+GoogleYaw, -0.948332 GooglePitch, -0.0228709 GoogleRoll, 0.0117162
+pack:0 ax, 0.778061 ay, 0.651566 az, 9.76346
+GoogleYaw, -0.948332 GooglePitch, -0.0228709 GoogleRoll, 0.0117162
+pack:0 ax, -7.49611 ay, -8.29625 az, 11.5368
+GoogleYaw, -0.948332 GooglePitch, -0.0228709 GoogleRoll, 0.0117162
+pack:0 ax, -7.49611 ay, -8.29625 az, 11.5368
+GoogleYaw, -0.948332 GooglePitch, -0.0228709 GoogleRoll, 0.0117162
+pack:0 ax, -7.49611 ay, -8.29625 az, 11.5368
+GoogleYaw, -0.948332 GooglePitch, -0.0228709 GoogleRoll, 0.0117162
+pack:0 ax, -7.49611 ay, -8.29625 az, 11.5368
+GoogleYaw, -0.911602 GooglePitch, -0.0221321 GoogleRoll, 0.0161095
+pack:0 ax, 2.31816 ay, 1.53468 az, 9.7587
+GoogleYaw, -0.911602 GooglePitch, -0.0221321 GoogleRoll, 0.0161095
+pack:0 ax, 2.31816 ay, 1.53468 az, 9.7587
+GoogleYaw, -0.907633 GooglePitch, -0.0166445 GoogleRoll, 0.0223895
+pack:0 ax, 2.31816 ay, 1.53468 az, 9.7587
+GoogleYaw, -0.907633 GooglePitch, -0.0166445 GoogleRoll, 0.0223895
+pack:0 ax, 2.31816 ay, 1.53468 az, 9.7587
+GoogleYaw, -0.907633 GooglePitch, -0.0166445 GoogleRoll, 0.0223895
+pack:0 ax, 0.561447 ay, 1.03004 az, 9.99911
+GoogleYaw, -0.918229 GooglePitch, -0.0172095 GoogleRoll, 0.0205849
+pack:0 ax, 0.19249 ay, -0.145859 az, 9.6373
+GoogleYaw, -0.918229 GooglePitch, -0.0172095 GoogleRoll, 0.0205849
+pack:0 ax, 0.19249 ay, -0.145859 az, 9.6373
+GoogleYaw, -0.918229 GooglePitch, -0.0172095 GoogleRoll, 0.0205849
+pack:0 ax, 0.19249 ay, -0.145859 az, 9.6373
+GoogleYaw, -0.922627 GooglePitch, -0.016573 GoogleRoll, 0.0238986
+pack:0 ax, 0.699509 ay, 1.15144 az, 13.9743
+GoogleYaw, -0.922627 GooglePitch, -0.016573 GoogleRoll, 0.0238986
+pack:0 ax, 0.699509 ay, 1.15144 az, 13.9743
+GoogleYaw, -0.922627 GooglePitch, -0.016573 GoogleRoll, 0.0238986
+pack:0 ax, 0.699509 ay, 1.15144 az, 13.9743
+GoogleYaw, -0.923924 GooglePitch, -0.0127713 GoogleRoll, 0.0296151
+pack:0 ax, 0.699509 ay, 1.15144 az, 13.9743
+GoogleYaw, -0.923924 GooglePitch, -0.0127713 GoogleRoll, 0.0296151
+pack:0 ax, 0.135361 ay, 0.61348 az, 11.3535
+GoogleYaw, -0.923924 GooglePitch, -0.0127713 GoogleRoll, 0.0296151
+pack:0 ax, 0.135361 ay, 0.61348 az, 11.3535
+GoogleYaw, -0.923924 GooglePitch, -0.0127713 GoogleRoll, 0.0296151
+pack:0 ax, 0.135361 ay, 0.61348 az, 11.3535
+GoogleYaw, -0.923924 GooglePitch, -0.0127713 GoogleRoll, 0.0296151
+pack:0 ax, 0.135361 ay, 0.61348 az, 11.3535
+GoogleYaw, -0.922235 GooglePitch, -0.00946129 GoogleRoll, 0.0516526
+pack:0 ax, -0.907242 ay, 0.603958 az, 10.6728
+GoogleYaw, -0.922235 GooglePitch, -0.00946129 GoogleRoll, 0.0516526
+pack:0 ax, -0.907242 ay, 0.603958 az, 10.6728
+GoogleYaw, -0.917739 GooglePitch, -0.00701614 GoogleRoll, 0.0954363
+pack:0 ax, -0.907242 ay, 0.603958 az, 10.6728
+GoogleYaw, -0.917739 GooglePitch, -0.00701614 GoogleRoll, 0.0954363
+pack:0 ax, -0.907242 ay, 0.603958 az, 10.6728
+GoogleYaw, -0.917739 GooglePitch, -0.00701614 GoogleRoll, 0.0954363
+pack:0 ax, -1.13338 ay, 0.537308 az, 9.46829
+GoogleYaw, -0.917739 GooglePitch, -0.00701614 GoogleRoll, 0.0954363
+pack:0 ax, -1.13338 ay, 0.537308 az, 9.46829
+GoogleYaw, -0.914508 GooglePitch, -0.0034686 GoogleRoll, 0.139018
+pack:0 ax, -1.69753 ay, -0.0030365 az, 8.8732
+GoogleYaw, -0.914508 GooglePitch, -0.0034686 GoogleRoll, 0.139018
+pack:0 ax, -1.69753 ay, -0.0030365 az, 8.8732
+GoogleYaw, -0.911789 GooglePitch, 0.00112076 GoogleRoll, 0.190429
+pack:0 ax, -2.08791 ay, 0.780106 az, 8.8494
+GoogleYaw, -0.911789 GooglePitch, 0.00112076 GoogleRoll, 0.190429
+pack:0 ax, -2.08791 ay, 0.780106 az, 8.8494
+GoogleYaw, -0.911789 GooglePitch, 0.00112076 GoogleRoll, 0.190429
+pack:0 ax, -2.08791 ay, 0.780106 az, 8.8494
+GoogleYaw, -0.909208 GooglePitch, 0.00476732 GoogleRoll, 0.231254
+pack:0 ax, -2.08791 ay, 0.780106 az, 8.8494
+GoogleYaw, -0.909208 GooglePitch, 0.00476732 GoogleRoll, 0.231254
+pack:0 ax, -2.55208 ay, 0.432571 az, 6.98795
+GoogleYaw, -0.909208 GooglePitch, 0.00476732 GoogleRoll, 0.231254
+pack:0 ax, -2.55208 ay, 0.432571 az, 6.98795
+GoogleYaw, -0.909208 GooglePitch, 0.00476732 GoogleRoll, 0.231254
+pack:0 ax, -2.55208 ay, 0.432571 az, 6.98795
+GoogleYaw, -0.909208 GooglePitch, 0.00476732 GoogleRoll, 0.231254
+pack:0 ax, -2.55208 ay, 0.432571 az, 6.98795
+GoogleYaw, -0.9063 GooglePitch, 0.00702505 GoogleRoll, 0.269534
+pack:0 ax, -2.85915 ay, 0.163589 az, 6.37381
+GoogleYaw, -0.9063 GooglePitch, 0.00702505 GoogleRoll, 0.269534
+pack:0 ax, -2.85915 ay, 0.163589 az, 6.37381
+GoogleYaw, -0.902454 GooglePitch, 0.00818347 GoogleRoll, 0.296784
+pack:0 ax, -2.85915 ay, 0.163589 az, 6.37381
+GoogleYaw, -0.902454 GooglePitch, 0.00818347 GoogleRoll, 0.296784
+pack:0 ax, -2.85915 ay, 0.163589 az, 6.37381
+GoogleYaw, -0.902454 GooglePitch, 0.00818347 GoogleRoll, 0.296784
+pack:0 ax, -2.52113 ay, 0.308792 az, 6.94034
+GoogleYaw, -0.902454 GooglePitch, 0.00818347 GoogleRoll, 0.296784
+pack:0 ax, -2.52113 ay, 0.308792 az, 6.94034
+GoogleYaw, -0.900081 GooglePitch, 0.00808014 GoogleRoll, 0.301596
+pack:0 ax, -2.4402 ay, 0.0374298 az, 7.0546
+GoogleYaw, -0.897105 GooglePitch, 0.0065517 GoogleRoll, 0.285407
+pack:0 ax, -2.6711 ay, -0.517197 az, 8.31857
+GoogleYaw, -0.897105 GooglePitch, 0.0065517 GoogleRoll, 0.285407
+pack:0 ax, -2.6711 ay, -0.517197 az, 8.31857
+GoogleYaw, -0.897105 GooglePitch, 0.0065517 GoogleRoll, 0.285407
+pack:0 ax, -2.6711 ay, -0.517197 az, 8.31857
+GoogleYaw, -0.895395 GooglePitch, 0.00443516 GoogleRoll, 0.256952
+pack:0 ax, -2.6711 ay, -0.517197 az, 8.31857
+GoogleYaw, -0.895395 GooglePitch, 0.00443516 GoogleRoll, 0.256952
+pack:0 ax, -1.69753 ay, -0.236313 az, 9.60159
+GoogleYaw, -0.895395 GooglePitch, 0.00443516 GoogleRoll, 0.256952
+pack:0 ax, -1.69753 ay, -0.236313 az, 9.60159
+GoogleYaw, -0.895395 GooglePitch, 0.00443516 GoogleRoll, 0.256952
+pack:0 ax, -1.69753 ay, -0.236313 az, 9.60159
+GoogleYaw, -0.895395 GooglePitch, 0.00443516 GoogleRoll, 0.256952
+pack:0 ax, -1.69753 ay, -0.236313 az, 9.60159
+GoogleYaw, -0.895458 GooglePitch, 0.00124025 GoogleRoll, 0.214226
+pack:0 ax, -1.04292 ay, 0.223099 az, 10.3657
+GoogleYaw, -0.895458 GooglePitch, 0.00124025 GoogleRoll, 0.214226
+pack:0 ax, -1.04292 ay, 0.223099 az, 10.3657
+GoogleYaw, -0.897788 GooglePitch, -0.00365616 GoogleRoll, 0.162631
+pack:0 ax, -1.04292 ay, 0.223099 az, 10.3657
+GoogleYaw, -0.897788 GooglePitch, -0.00365616 GoogleRoll, 0.162631
+pack:0 ax, -1.04292 ay, 0.223099 az, 10.3657
+GoogleYaw, -0.897788 GooglePitch, -0.00365616 GoogleRoll, 0.162631
+pack:0 ax, -0.750137 ay, 0.251663 az, 11.1369
+GoogleYaw, -0.897788 GooglePitch, -0.00365616 GoogleRoll, 0.162631
+pack:0 ax, -0.750137 ay, 0.251663 az, 11.1369
+GoogleYaw, -0.900011 GooglePitch, -0.0080315 GoogleRoll, 0.124486
