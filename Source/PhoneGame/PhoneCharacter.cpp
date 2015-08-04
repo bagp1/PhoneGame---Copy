@@ -122,6 +122,15 @@ FVector APhoneCharacter::getOrientationVector(){
 	//return FVector(1, 2, 3);
 }
 
+bool recording = false;
+void APhoneCharacter::startRecording(bool setting){
+	recording = true;
+}
+
+void APhoneCharacter::writeDataToFile(float x, float y, float z, float pitch, float yaw, float roll, float px, float py, float pz){
+	if (recording) DataLogFile << x << ", " << y << ", " << z << ", " << pitch << ", " << yaw << ", " << roll << ", " << px << ", " << py << ", " << pz << "\n";
+}
+
 void parseDatagram(char buffer[]){
 	GEngine->AddOnScreenDebugMessage(3, 5.f, FColor::Blue, TEXT("Parsing Datagram"));
 	UE_LOG(YourLog, Log, TEXT("Parsing Datagram"));
@@ -171,7 +180,7 @@ void parseDatagram(char buffer[]){
 	FString resultgz = FString::SanitizeFloat(gz);
 	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Blue, resultgx + ", " + resultgy + ", "+ resultgz);
 
-	DataLogFile << ax << ", " << ay << ", " << az << ", " << GoogleYaw << ", " << GooglePitch << ", " << GoogleRoll << "\n";
+	//if (recording) DataLogFile << ax << ", " << ay << ", " << az << ", " << GooglePitch << ", " << GoogleYaw << ", " << GoogleRoll << "\n"; //TODO PITCH AND YAW ARE BACKWARDS a nice way of setting this in game
 }
 
 void closeConnection(SOCKET sd){
@@ -312,7 +321,7 @@ float receive(){
 	strftime(buffer, 200, "%S-%M-%H_%d-%b-%Y", timeinfo);
 	FString path = FPaths::GameDir() + "/DataLog/" + buffer + ".csv";
 	DataLogFile.open(*path, std::ios::out);
-	DataLogFile << "acceleration:x,y,z,Orientation:yaw,pitch,roll\n";
+	DataLogFile << "acceleration:x,y,z,Orientation:yaw,pitch,roll,PredGravityX,PredGravityY,PredGravityZ\n";
 
 	while (true){
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("reading"));
@@ -320,6 +329,7 @@ float receive(){
 		if (killThread == true) {
 			fprintf(stderr, "KillThread: ending server for FreePIE.\n");
 			DataLogFile.close();
+			if (!recording) std::remove(TCHAR_TO_ANSI(*path));//if recording was never started delete record file
 			//UE_LOG(YourLog, Warning, TEXT("KillThread: ending server for FreePIE.\n"));//this will break because if killthread then game is closing
 			closesocket(sd);
 			WSACleanup();
