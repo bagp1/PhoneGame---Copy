@@ -1,0 +1,2 @@
+Become the fruit ninja by spawning destrubible and removing a static mesh when collision happens
+work out the double spawning nonsense.
